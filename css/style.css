@@ -28,8 +28,13 @@ body {
      font-weight: bold;
 }
 
+ h2 {
+     text-align: center;
+
+ }
+
 
  main {
      margin: 0 auto;
-     width: 80%;
+     width: 60%;
  }
