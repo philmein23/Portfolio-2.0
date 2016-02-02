@@ -3,26 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 <body>
 
+
+<header id="topheader">
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Contact Me</li>
+
+        </ul>
+
+
+    </nav>
+
+    <h1>Phillip Nguyen</h1>
+</header>
 <main>
-    <header>
-        <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-
-            </ul>
 
 
-        </nav>
-    </header>
+    <section id="About Me">
+        <article>
+            <h2>Who am I?</h2>
+            <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. </p>
 
-    <section>
+        </article>
+    </section>
 
+    <section id="projects">
+        <article class="template">
+            <header>
+                <h2>Project Name</h2>
+                <div class="project-date">
+                    <address><a href="">Project</a></address>
+                    submitted on
+                    <time datetime="">Publish Time</time>
+
+                </div>
+
+
+            </header>
+            <section class="project-description"></section>
+
+
+        </article>
 
 
     </section>
@@ -30,5 +59,9 @@
 
 </main>
 
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="js/portfolio.js.js"></script>
+<script type="text/javascript" src="js/projects.js.js"></script>
 </body>
 </html>
