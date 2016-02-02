@@ -14,12 +14,12 @@ Project.prototype.toHtml = function() {
     var $newProject = $('article.template').clone();
 
 
-    $newProject.find("header h2").text(this.title);
+    $newProject.find("a").text(this.title);
     $newProject.find("time").attr('datatime', this.submittedOn);
     $newProject.attr('href', this.projectURL);
     $newProject.find(".project-description").html(this.projectDetails);
 
-    $newProject.find('time').html('about' + parseInt((new Date() - new Date(this.submittedOn))/60/60/24/1000) + ' days ago');
+    $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.submittedOn))/60/60/24/1000) + ' days ago');
 
 
     $newProject.removeClass('template');
