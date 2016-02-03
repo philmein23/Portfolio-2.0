@@ -3,6 +3,7 @@ var projects = [];
 function Project (data) {
 
     this.title = data.title;
+    this.category = data.category;
     this.submittedOn = data.submittedOn;
     this.projectURL = data.projectURL;
     this.projectDetails = data.projectDetails;
@@ -13,8 +14,10 @@ Project.prototype.toHtml = function() {
 
     var $newProject = $('article.template').clone();
 
+    $newProject.attr('data-category', this.category);
 
-    $newProject.find("a").text(this.title);
+
+    $newProject.find("a.projectlink").html(this.title);
     $newProject.find("time").attr('datatime', this.submittedOn);
     $newProject.attr('href', this.projectURL);
     $newProject.find(".project-description").html(this.projectDetails);

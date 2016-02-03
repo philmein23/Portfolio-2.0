@@ -1,5 +1,6 @@
 body {
   margin: 0;
+    font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -11,10 +12,15 @@ body {
     height: 400px;
     color: white;
 
+
 }
 
 #topheader h1 {
     padding: 200px 0 0 60px;
+}
+
+.navlinks {
+    margin: 0px;
 }
 
 .navbar {
@@ -40,11 +46,19 @@ body {
      width: 60%;
  }
 
+ article {
+     margin: 20px 0;
+ }
+
  a, a:link:visited{
      font-size: 2em;
      color:black;
      font-style: normal;
      text-decoration: none;
+ }
+
+ a.read-on {
+     font-size: 0.75em;
  }
 
  footer {
@@ -58,7 +72,7 @@ body {
 
  footer .footer-links > li{
      display: inline-block;
-     margin: 0 10px;
+     margin: 0 20px;
  }
 
  footer .footer-links > li a {

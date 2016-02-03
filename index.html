@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/module.css">
-    <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 <body>
@@ -14,16 +16,17 @@
 <header id="topheader">
     <nav class="navbar">
         <ul class="navlinks">
-            <li>About Me</li>
-            <li>Projects</li>
 
+            <li class="tab" data-content="projects">Projects</li>
+            <li class="tab" data-content="about">About Me</li>
+            <li class="tab" data-content="contact">Contact Me</li>
 
         </ul>
     </nav>
     <h1>Phillip Nguyen</h1>
 </header>
 <main>
-    <section id="About Me">
+    <section id="about-me">
         <article>
             <h2>Who am I?</h2>
             <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My
@@ -34,11 +37,18 @@
     </section>
 
     <section id="projects">
-        <article class="template">
+        <h2>Projects</h2>
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">Filled in by Category</option>
+            </select>
+
+        </div>
+        <article class="template" data-category="misc">
             <header>
-                <h2>Projects</h2>
+
                 <div class="project-date">
-                    <address><a href="">Project</a></address>
+                    <address><a href="" class="projectlink">Project</a></address>
                     submitted
                     <time datetime="">Publish Time</time>
 
@@ -46,6 +56,7 @@
 
             </header>
             <section class="project-description"></section>
+            <address><a href="#" class="read-on">Read more</a></address>
 
 
         </article>
@@ -58,8 +69,8 @@
         <div class="container">
             <p class="contact-me">Contact me via GitHub or LinkedIn</p>
             <ul class="footer-links">
-                <li><a href="https://github.com/philmein23">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/phillipdnguyen23">LinkedIn</a></li>
+                <li><a href="https://github.com/philmein23" class="icon-github">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/phillipdnguyen23" class="icon-link">LinkedIn</a></li>
             </ul>
 
 
@@ -72,6 +83,7 @@
 
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="js/projectview.js"></script>
 <script type="text/javascript" src="js/projects.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 
