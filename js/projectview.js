@@ -21,12 +21,23 @@ projectView.addCategoryFilter = function () {
 
 projectView.handleMainNav = function () {
 
-    $('.navbar').on('click', function () {
+    $('.navbar').on('click', '.project-tab', function () {
 
-        $("#about-me").slideToggle(175);
         $("#projects").slideToggle(175);
 
-    })
+    });
+
+    $('.navbar').on('click', '.about-tab', function () {
+
+        $("#about-me").slideToggle(175);
+
+    });
+
+    $('.navbar').on('click', '.contact-tab', function () {
+
+        $("#footer").slideToggle(175);
+
+    });
 }
 
 

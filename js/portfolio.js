@@ -21,7 +21,6 @@ Project.prototype.toHtml = function() {
     $newProject.find("time").attr('datatime', this.submittedOn);
     $newProject.attr('href', this.projectURL);
     $newProject.find(".project-description").html(this.projectDetails);
-
     $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.submittedOn))/60/60/24/1000) + ' days ago');
 
 
