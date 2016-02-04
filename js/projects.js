@@ -4,7 +4,7 @@ var rawData = [
         category: 'misc',
         submittedOn: '2016-2-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
-        projectDetails: '<p>Web Developer Portfolio showcasing all projects using a variety of languages utilizng HTML, CSS, and Javascript</p><p>Web Developer Portfolio showcasing all projects using a variety of languages utilizng HTML, CSS, and Javascript</p><p>Web Developer Portfolio showcasing all projects using a variety of languages utilizng HTML, CSS, and Javascript</p>'
+        projectDetails: '<p>Web Developer Portfolio showcasing all projects using a variety of languages utilizng HTML, CSS, and Javascript</p>'
 
     },
     {
@@ -12,7 +12,7 @@ var rawData = [
         category: 'music',
         submittedOn: '2015-11-20',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
-        projectDetails: '<p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>'
+        projectDetails: '<p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>'
 
     },
     {
@@ -20,7 +20,7 @@ var rawData = [
         category: 'misc',
         submittedOn: '2015-10-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
-        projectDetails: '<p>Developed a quiz application using jQuery conceptualizing the usage of object literals</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>'
+        projectDetails: '<p>Developed a quiz application using jQuery conceptualizing the usage of object literals</p>'
 
     },
     {
@@ -28,7 +28,7 @@ var rawData = [
         category: 'game',
         submittedOn: '2015-9-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
-        projectDetails: '</p>A player randomly guesses a number between 1-100 and each guess will signal HOT or COLD relative to the correct answer</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>'
+        projectDetails: '</p>A player randomly guesses a number between 1-100 and each guess will signal HOT or COLD relative to the correct answer</p>'
 
     },
     {
@@ -36,7 +36,7 @@ var rawData = [
         category: 'misc',
         submittedOn: '2015-8-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
-        projectDetails: '<p>This was my first project to clone the Karma Landing Page using HTML and CSS</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p><p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>'
+        projectDetails: '<p>This was my first project to clone the Karma Landing Page using HTML and CSS</p>'
 
     }
 
