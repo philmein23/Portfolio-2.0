@@ -21,23 +21,13 @@ projectView.addCategoryFilter = function () {
 
 projectView.handleMainNav = function () {
 
-    $('.navbar').on('click', '.project-tab', function () {
+    $('.navbar').on('click', '.tab', function () {
 
-        $("#projects").slideToggle(175);
-
-    });
-
-    $('.navbar').on('click', '.about-tab', function () {
-
-        $("#about-me").slideToggle(175);
+        $('.tab-content').hide();
+        $('#' + $(this).data('content')).fadeIn();
 
     });
 
-    $('.navbar').on('click', '.contact-tab', function () {
-
-        $("#footer").slideToggle(175);
-
-    });
 }
 
 
@@ -54,6 +44,10 @@ projectView.setPreview = function () {
 
 };
 
-$(projectView.handleMainNav());
-$(projectView.setPreview());
-$(projectView.addCategoryFilter());
+$(function() {
+    projectView.handleMainNav();
+    projectView.setPreview();
+    projectView.addCategoryFilter();
+
+
+})

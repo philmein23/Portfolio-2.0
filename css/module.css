@@ -7,7 +7,7 @@
 .topheader {
 
     background:url(../img/background.jpg) 0 50%;
-    background-size: cover;
+    background-size:cover;
     width:100%;
     height: 400px;
     color: white;
@@ -84,7 +84,7 @@ a.read-on {
 
 /*Unable to create an organized drop menu at 320 px width */
 /*Is there a way to remedy this? */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 340px) {
     .topheader h1 {
         float:none;
         position: relative;
