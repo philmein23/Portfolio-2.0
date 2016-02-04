@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+
     <link rel="stylesheet" href="css/module.css">
 
 </head>
 <body>
 
 
-<header id="topheader">
+<header class="topheader clearfix">
     <nav class="navbar">
+        <a class="icon-menu"></a>
         <ul class="navlinks">
 
             <li class="project-tab" data-content="projects">Projects</li>
@@ -26,7 +32,7 @@
     <h1>Phillip Nguyen</h1>
 </header>
 <main>
-    <section id="about-me">
+    <section id="about-me" class="tab-content">
         <article>
             <h2>Who am I?</h2>
             <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My
@@ -36,7 +42,7 @@
         </article>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="tab-content">
         <h2>Projects</h2>
         <div class="filters">
             <select id="category-filter">
@@ -86,7 +92,6 @@
 <script type="text/javascript" src="js/projects.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/projectview.js"></script>
-
 
 
 </body>

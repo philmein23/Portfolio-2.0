@@ -1,0 +1,16 @@
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.topheader h1 {
+    max-width: 50%;
+}
+
+.clearfix::after { /*What does clearfix do*/
+    content: '';
+    display: table;
+    clear:both;
+}
