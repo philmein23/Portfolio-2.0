@@ -83,6 +83,7 @@ a.read-on {
 
 
 /*Unable to create an organized drop menu at 320 px width */
+/*Is there a way to remedy this? */
 @media only screen and (min-width: 320px) {
     .topheader h1 {
         float:none;
