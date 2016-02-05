@@ -18,6 +18,11 @@ h2 {
 }
 
 
+aside {
+    font-style: italic;
+    font-size: 1em;
+}
+
 
 article {
     margin: 20px 0;

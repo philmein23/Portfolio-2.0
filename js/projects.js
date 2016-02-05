@@ -1,6 +1,7 @@
 var rawData = [
     {
         title: 'Portfolio',
+        language: 'Javascript, handlebars.js, jquery, HTML, CSS',
         category: 'misc',
         submittedOn: '2016-2-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
@@ -9,6 +10,7 @@ var rawData = [
     },
     {
         title: 'SoundCloud API',
+        language: 'Javascript, jquery, HTML, CSS',
         category: 'music',
         submittedOn: '2015-11-20',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
@@ -17,6 +19,7 @@ var rawData = [
     },
     {
         title: 'Quiz Application',
+        language: 'Javascript, jquery, HTML, CSS',
         category: 'misc',
         submittedOn: '2015-10-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
@@ -25,6 +28,7 @@ var rawData = [
     },
     {
         title: 'Hot or Cold Game',
+        language: 'Javascript, jquery, HTML, CSS',
         category: 'game',
         submittedOn: '2015-9-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',
@@ -33,6 +37,7 @@ var rawData = [
     },
     {
         title: 'Karma Landing Page',
+        language: 'HTML, CSS',
         category: 'misc',
         submittedOn: '2015-8-1',
         projectURL: 'https://github.com/philmein23/PhillipPortfolio2',

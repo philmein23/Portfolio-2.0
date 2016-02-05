@@ -3,6 +3,7 @@ var projects = [];
 function Project (data) {
 
     this.title = data.title;
+    this.language = data.language;
     this.category = data.category;
     this.submittedOn = data.submittedOn;
     this.projectURL = data.projectURL;
@@ -28,8 +29,8 @@ rawData.sort(function(a,b) {
 
 })
 
-rawData.forEach(function(element) {
-    projects.push(new Project(element));
+rawData.forEach(function(data) {
+    projects.push(new Project(data));
 
 });
 
