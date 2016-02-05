@@ -12,21 +12,13 @@ function Project (data) {
 
 Project.prototype.toHtml = function() {
 
-    var $newProject = $('article.template').clone();
 
-    $newProject.attr('data-category', this.category);
+    var template = Handlebars.compile($('#project-template').text())
 
+    this.daysAgo = parseInt((new Date() - new Date(this.submittedOn))/60/60/24/1000);
+    this.submitDate = this.submittedOn ? 'submitted ' + this.daysAgo + ' days ago': '(draft)';
 
-    $newProject.find("a.projectlink").html(this.title);
-    $newProject.find("time").attr('datatime', this.submittedOn);
-    $newProject.attr('href', this.projectURL);
-    $newProject.find(".project-description").html(this.projectDetails);
-    $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.submittedOn))/60/60/24/1000) + ' days ago');
-
-
-    $newProject.removeClass('template');
-
-   return $newProject;
+    return template(this);
 
 }
 

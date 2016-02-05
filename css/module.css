@@ -69,12 +69,7 @@ footer .footer-links > li a {
     font-weight:bold;
 }
 
-a, a:link:visited{
-    font-size: 2em;
-    color:black;
-    font-style: normal;
-    text-decoration: none;
-}
+
 
 a.read-on {
     font-size: 0.75em;
@@ -82,16 +77,8 @@ a.read-on {
 
 
 
-/*Unable to create an organized drop menu at 320 px width */
-/*Is there a way to remedy this? */
-@media only screen and (min-width: 340px) {
-    .topheader h1 {
-        float:none;
-        position: relative;
-        left: 2em;
-        top: 1em;
 
-    }
+@media only screen and (min-width: 340px) {
 
     h2 {
         font-size: 1.5em;
@@ -110,15 +97,15 @@ a.read-on {
 
 
 @media only screen and (min-width: 600px) {
-    .topheader h1 {
-        float:none;
-        position: relative;
-        top: 2em;
+    .icon-menu {
+        display: none;
+
+    }
+    .navbar ul {
+        display:block;
+
     }
 
-    section {
-        width:auto;
-    }
 
 }
 
@@ -127,10 +114,11 @@ a.read-on {
         display: none;
 
     }
-
     .navbar ul {
         display:block;
-        float:right;
+
     }
+
+
 
 }

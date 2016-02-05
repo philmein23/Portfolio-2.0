@@ -10,15 +10,31 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/module.css">
     <link rel="stylesheet" href="css/layout.css">
 
-    <link rel="stylesheet" href="css/module.css">
+
+
+    <script id="project-template" type="text/x-handlebars-template">
+        <article class="clearfix" data-category="{{category}}">
+            <header>
+                <div class="project-date">
+                    <address><a href="{{projectURL}}">{{title}}</a></address>
+                    <time>{{submitDate}}</time>
+                </div>
+            </header>
+            <section>{{{projectDetails}}}</section>
+
+        </article>
+
+
+    </script>
 
 </head>
 <body>
 
 
-<header class="topheader clearfix">
+<header class="topheader">
     <nav class="navbar">
         <a class="icon-menu"></a>
         <ul class="navlinks">
@@ -50,22 +66,6 @@
             </select>
 
         </div>
-        <article class="template" data-category="misc">
-            <header>
-
-                <div class="project-date">
-                    <address><a href="" class="projectlink">Project</a></address>
-                    submitted
-                    <time datetime="">Publish Time</time>
-
-                </div>
-
-            </header>
-            <section class="project-description"></section>
-            <address><a href="#" class="read-on">Read more</a></address>
-
-
-        </article>
 
 
     </section>
@@ -89,6 +89,7 @@
 
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script type="text/javascript" src="js/projects.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/projectview.js"></script>

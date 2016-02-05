@@ -4,7 +4,6 @@ main {
     width: 80%;
 }
 
-
 .topheader h1 {
     max-width: 50%;
 }
@@ -12,5 +11,48 @@ main {
 .clearfix::after { /*What does clearfix do*/
     content: '';
     display: table;
-    clear:both;
+    clear: both;
+}
+
+@media only screen and (min-width: 340px) {
+    .topheader h1 {
+        float: none;
+        position: relative;
+        left: 2em;
+        top: 1em;
+
+    }
+
+    section {
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .navbar ul {
+
+        float: right;
+    }
+
+    .topheader h1 {
+        float: none;
+        position: relative;
+        top: 2em;
+    }
+
+    section {
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar ul {
+
+        float: right;
+    }
+
 }

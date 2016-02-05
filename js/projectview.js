@@ -8,7 +8,10 @@ projectView.addCategoryFilter = function () {
             var val = $(this).attr('data-category');
 
             var optionTag = '<option value="' + val + '">' + val + '</option>';
-            $('#category-filter').append(optionTag);
+            if ($('#category-filter option[value="' + val + '"]').length === 0) {
+                $('#category-filter').append(optionTag);
+            }
+
 
         }
 
@@ -17,6 +20,22 @@ projectView.addCategoryFilter = function () {
 
 };
 
+
+projectView.insertCategoryFilter = function () {
+    $('#category-filter').on('change', function () {
+        if ($(this).val()) {
+            $('article').hide();
+            $('article[data-category="' + $(this).val() + '"]').fadeIn();
+
+        } else {
+            $('article').fadeIn();
+
+        }
+
+    })
+
+
+}
 
 
 projectView.handleMainNav = function () {
@@ -44,10 +63,11 @@ projectView.setPreview = function () {
 
 };
 
-$(function() {
+$(function () {
     projectView.handleMainNav();
     projectView.setPreview();
     projectView.addCategoryFilter();
+    projectView.insertCategoryFilter();
 
 
 })
