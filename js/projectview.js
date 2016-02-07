@@ -47,10 +47,10 @@ projectView.handleMainNav = function () {
 
     });
 
-}
+};
 
-
-projectView.setPreview = function () {
+//disabled
+/*projectView.setPreview = function () {
     $('.project-description *:nth-of-type(n+1)').hide();
 
 
@@ -61,11 +61,11 @@ projectView.setPreview = function () {
     })
 
 
-};
+};*/
 
 $(function () {
     projectView.handleMainNav();
-    projectView.setPreview();
+    /*projectView.setPreview();*/
     projectView.addCategoryFilter();
     projectView.insertCategoryFilter();
 

@@ -1,7 +1,7 @@
 
 main {
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 }
 
 .topheader h1 {
@@ -27,11 +27,13 @@ main {
         width: auto;
     }
 
+
+
 }
 
 @media only screen and (min-width: 600px) {
 
-    .navbar ul {
+    .navbar li {
 
         float: right;
     }
@@ -44,15 +46,6 @@ main {
 
     section {
         width: auto;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .navbar ul {
-
-        float: right;
     }
 
 }
