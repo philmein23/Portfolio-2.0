@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="css/module.css">
 
 
-
-
     <script id="project-template" type="text/x-handlebars-template">
         <article class="clearfix" data-category="{{category}}">
             <header>
@@ -57,8 +55,9 @@
             <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My
                 objective is to become well-versed full stack developer in hopes of creating wonderful web applications
                 that can impact people around the world.</p>
-            <p>When I am not striving to learn or code, I am constantly staying active with fitness including weight training and being outdoors. I love
-            to explore my city of Seattle, and spend time with friends and family.</p>
+            <p>When I am not striving to learn or code, I am constantly staying active with fitness including weight
+                training and being outdoors. I love
+                to explore my city of Seattle, and spend time with friends and family.</p>
 
         </article>
     </section>
@@ -95,9 +94,11 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-<script type="text/javascript" src="js/projects.js"></script>
 <script type="text/javascript" src="js/portfolio.js"></script>
 <script type="text/javascript" src="js/projectview.js"></script>
+<script>
+    Project.fetchAll();
+</script>
 
 
 </body>

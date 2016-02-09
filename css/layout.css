@@ -1,7 +1,7 @@
 
 main {
     margin: 0 auto;
-    width: 60%;
+
 }
 
 .topheader h1 {
@@ -27,6 +27,10 @@ main {
         width: auto;
     }
 
+    main {
+        max-width: 80%;
+    }
+
 
 
 }
@@ -37,7 +41,7 @@ main {
 
         float: right;
     }
-
+ß
     .topheader h1 {
         float: none;
         position: relative;
@@ -46,6 +50,10 @@ main {
 
     section {
         width: auto;
+    }
+
+    main {
+        max-width: 65%;
     }
 
 }

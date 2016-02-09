@@ -49,19 +49,29 @@ projectView.handleMainNav = function () {
 
 };
 
+
+projectView.initiateIndexPage = function () {
+
+    Project.all.forEach(function (data) {
+
+        $('#projects').append(data.toHtml());
+
+    });
+};
+
 //disabled
 /*projectView.setPreview = function () {
-    $('.project-description *:nth-of-type(n+1)').hide();
+ $('.project-description *:nth-of-type(n+1)').hide();
 
 
-    $('a.read-on').on('click', function (e) {
-        e.preventDefault();
-        $('.project-description *:nth-of-type(n+1)').show();
-        $('a.read-on').hide();
-    })
+ $('a.read-on').on('click', function (e) {
+ e.preventDefault();
+ $('.project-description *:nth-of-type(n+1)').show();
+ $('a.read-on').hide();
+ })
 
 
-};*/
+ };*/
 
 $(function () {
     projectView.handleMainNav();
