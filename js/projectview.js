@@ -11,12 +11,8 @@ projectView.addCategoryFilter = function () {
             if ($('#category-filter option[value="' + val + '"]').length === 0) {
                 $('#category-filter').append(optionTag);
             }
-
-
         }
-
     })
-
 
 };
 
@@ -31,11 +27,9 @@ projectView.insertCategoryFilter = function () {
             $('article').fadeIn();
 
         }
-
     })
 
-
-}
+};
 
 
 projectView.handleMainNav = function () {
@@ -80,4 +74,4 @@ $(function () {
     projectView.insertCategoryFilter();
 
 
-})
+});
