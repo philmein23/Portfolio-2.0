@@ -4,6 +4,25 @@ main {
 
 }
 
+.column {
+    width: 50%;
+
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 .topheader h1 {
     max-width: 50%;
 }
@@ -41,7 +60,7 @@ main {
 
         float: right;
     }
-ß
+
     .topheader h1 {
         float: none;
         position: relative;
@@ -56,4 +75,10 @@ main {
         max-width: 65%;
     }
 
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        max-width: 55%;
+    }
 }
