@@ -66,6 +66,7 @@ a.read-on {
     .column_two {
         width: 80%;
     }
+
     .wrap {
         display: flex;
         flex-wrap: wrap;
@@ -120,6 +121,7 @@ a.read-on {
         text-align: center;
 
     }
+
     .column_two {
         width: 60%;
     }
@@ -163,6 +165,7 @@ a.read-on {
     .column_two {
         width: 40%;
     }
+
     h2 {
         font-size: 2em;
     }

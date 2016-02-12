@@ -2,7 +2,7 @@
 
     function Project(data) {
 
-        Object.keys(data).forEach(function(current, index, arr) {
+        Object.keys(data).forEach(function (current, index, arr) {
 
             this[current] = data[current];
 
