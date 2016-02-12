@@ -2,26 +2,22 @@
     display: none;
 }
 
-
 /*How do I adapt background image to media queries? */
 .topheader {
 
-    background:url(../img/background.jpg) 0 50%;
-    background-size:cover;
-    width:100%;
+    background: url(../img/background.jpg) 0 50%;
+    background-size: cover;
+    width: 100%;
     height: 550px;
     color: white;
     position: relative;
 
-
 }
 
 .topheader h1 {
-    float:left;
+    float: left;
     padding: 3em 1em 0 0;
 }
-
-
 
 .navbar {
     position: absolute;
@@ -39,9 +35,7 @@
 }
 
 .navbar:hover ul {
-    display:flex;
-
-
+    display: flex;
 
 }
 
@@ -50,34 +44,42 @@ footer {
 }
 
 footer p.contact-me {
-    font-weight:bold;
+    font-weight: bold;
     font-size: 1em;
 }
 
-footer .footer-links > li{
+footer .footer-links > li {
     display: inline-block;
     margin: 0 20px;
 }
 
 footer .footer-links > li a {
     font-size: 0.75em;
-    font-weight:bold;
+    font-weight: bold;
 }
-
-
 
 a.read-on {
     font-size: 0.75em;
 }
 
-
-
-
 @media only screen and (min-width: 340px) {
+    .column_two {
+        width: 80%;
+    }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        text-align: center;
 
-   .topheader h1 {
+    }
+
+    .topheader h1 {
+        float: none;
         position: relative;
-        top: 1.5em;
+        left: 2em;
+        top: 1em;
+
     }
 
     h2 {
@@ -89,24 +91,44 @@ a.read-on {
     }
 
     section {
-        width:auto;
+        width: auto;
     }
+
     .icon-menu {
         float: right;
-        color:white;
+        color: white;
         padding: 0.5em 0.5em 0.5em;
 
     }
-   .navbar ul {
-       flex-direction: column;
 
-   }
+    .navbar ul {
+        flex-direction: column;
+
+    }
+
+    main {
+        max-width: 80%;
+    }
 
 }
 
-
-
 @media only screen and (min-width: 707px) {
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        text-align: center;
+
+    }
+    .column_two {
+        width: 60%;
+    }
+
+    .topheader h1 {
+        float: none;
+        position: relative;
+        top: 2em;
+    }
 
     h2 {
         font-size: 2em;
@@ -116,23 +138,31 @@ a.read-on {
         display: none;
 
     }
+
     .navbar ul {
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: row;
 
     }
+
     .navbar li {
 
         margin-left: 1em;
         font-weight: bold;
-
+        float: right;
     }
 
+    main {
+        max-width: 65%;
+    }
 
 }
 
 @media only screen and (min-width: 1024px) {
+    .column_two {
+        width: 40%;
+    }
     h2 {
         font-size: 2em;
     }
@@ -141,19 +171,20 @@ a.read-on {
         display: none;
 
     }
+
     .navbar ul {
-        display:flex;
+        display: flex;
         align-content: center;
         flex-wrap: nowrap;
 
     }
+
     .navbar li {
-
-
         font-weight: bold;
-
     }
 
-
+    main {
+        max-width: 55%;
+    }
 
 }

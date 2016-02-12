@@ -2,12 +2,11 @@
 
     function Project(data) {
 
-        this.title = data.title;
-        this.language = data.language;
-        this.category = data.category;
-        this.submittedOn = data.submittedOn;
-        this.projectURL = data.projectURL;
-        this.projectDetails = data.projectDetails;
+        Object.keys(data).forEach(function(current, index, arr) {
+
+            this[current] = data[current];
+
+        }, this);
 
     }
 
@@ -43,13 +42,13 @@
     Project.getAll = function () {
         $.getJSON('data/project.json', function (rawData) {
             localStorage.rawData = JSON.stringify(rawData);
-            Project.loadAll(JSON.parse(localStorage.rawData));
+            Project.loadAll(rawData);
             projectView.initiateIndexPage();
         })
 
     }
 
-    Project.fetchAll = function () {
+    Project.fetchAll = function (callback) {
         if (localStorage.rawData) {
 
             $.ajax({
@@ -64,13 +63,13 @@
                         Project.getAll();
                     } else {
                         Project.loadAll(JSON.parse(localStorage.rawData));
-                        projectView.initiateIndexPage();
+                        callback();
                     }
                 }
             })
 
         } else {
-            Project.getAll();
+            Project.getAll(projectView.initiateIndexPage);
         }
 
 

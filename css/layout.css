@@ -4,21 +4,27 @@ main {
 
 }
 
-.column {
-    width: 50%;
+.column_two {
+   margin-left:5%;
+    width:40%;
+    margin-top: 5%;
 
 }
 
-.row {
-    max-width: 90%;
-    margin: 0 auto;
+.column_one {
+    margin-right:5%;
+    margin-top: 5%;
+
 }
 
 .wrap {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    width: 80%;
+    margin-left:10%;
+
 
 
 }
@@ -33,52 +39,5 @@ main {
     clear: both;
 }
 
-@media only screen and (min-width: 340px) {
-    .topheader h1 {
-        float: none;
-        position: relative;
-        left: 2em;
-        top: 1em;
-
-    }
-
-    section {
-        width: auto;
-    }
-
-    main {
-        max-width: 80%;
-    }
 
 
-
-}
-
-@media only screen and (min-width: 600px) {
-
-    .navbar li {
-
-        float: right;
-    }
-
-    .topheader h1 {
-        float: none;
-        position: relative;
-        top: 2em;
-    }
-
-    section {
-        width: auto;
-    }
-
-    main {
-        max-width: 65%;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) {
-    main {
-        max-width: 55%;
-    }
-}
