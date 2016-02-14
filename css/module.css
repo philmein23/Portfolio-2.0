@@ -19,6 +19,11 @@
     padding: 3em 1em 0 0;
 }
 
+.header_row h2 {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
 .navbar {
     position: absolute;
     bottom: 0;
@@ -39,24 +44,6 @@
 
 }
 
-footer {
-    text-align: center;
-}
-
-footer p.contact-me {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-footer .footer-links > li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-footer .footer-links > li a {
-    font-size: 0.75em;
-    font-weight: bold;
-}
 
 a.read-on {
     font-size: 0.75em;
@@ -104,6 +91,7 @@ a.read-on {
 
     .navbar ul {
         flex-direction: column;
+
 
     }
 
@@ -163,7 +151,7 @@ a.read-on {
 
 @media only screen and (min-width: 1024px) {
     .column_two {
-        width: 40%;
+        width: 50%;
     }
 
     h2 {
