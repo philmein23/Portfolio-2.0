@@ -49,6 +49,7 @@
                         Project.getAll();
                     } else {
                         Project.loadAll(JSON.parse(localStorage.rawData));
+                        console.log(callback);
                         callback();
                     }
                 }
