@@ -1,19 +1,6 @@
 
 main {
     margin: 0 auto;
-
-}
-
-.column_two {
-   margin-left:1%;
-    margin-top: 1%;
-
-}
-
-.column_one {
-    margin-right:3%;
-    margin-top: 3%;
-
 }
 
 .wrap {
@@ -28,7 +15,7 @@ main {
     max-width: 50%;
 }
 
-.clearfix::after { /*What does clearfix do*/
+.clearfix::after {
     content: '';
     display: table;
     clear: both;

@@ -2,7 +2,7 @@
     display: none;
 }
 
-/*How do I adapt background image to media queries? */
+
 .topheader {
 
     background: url(../img/background.jpg) 0 50%;
@@ -11,6 +11,7 @@
     height: 550px;
     color: white;
     position: relative;
+    opacity: 0.9;
 
 }
 
@@ -19,10 +20,7 @@
     padding: 3em 1em 0 0;
 }
 
-.header_row h2 {
-    margin-top: 5%;
-    margin-bottom: 0;
-}
+
 
 .navbar {
     position: absolute;
@@ -36,7 +34,6 @@
 .navbar ul {
     display: none;
     list-style: none;
-
 }
 
 .navbar:hover ul {
@@ -49,17 +46,44 @@ a.read-on {
     font-size: 0.75em;
 }
 
+
+a, a.nav_link:visited {
+    font-size: 1.5em;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a.project_links:visited {
+    color: black;
+}
+
+a.icon-github, a.icon-linkedin {
+    color:black
+}
+
+
+footer {
+    height: 50px;
+    background: black;
+
+}
+
 @media only screen and (min-width: 340px) {
     .column_two {
         width: 80%;
     }
+    .column_one {
+        margin-right:5%;
+        margin-top: 10%;
+    }
+
 
     .wrap {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 80%;
         text-align: center;
-
     }
 
     .topheader h1 {
@@ -67,7 +91,6 @@ a.read-on {
         position: relative;
         left: 2em;
         top: 1em;
-
     }
 
     h2 {
@@ -86,13 +109,10 @@ a.read-on {
         float: right;
         color: white;
         padding: 0.5em 0.5em 0.5em;
-
     }
 
     .navbar ul {
         flex-direction: column;
-
-
     }
 
     main {
@@ -101,13 +121,17 @@ a.read-on {
 
 }
 
-@media only screen and (min-width: 707px) {
+@media only screen and (min-width: 768px) {
     .wrap {
         display: flex;
         flex-wrap: wrap;
         width: 70%;
         text-align: center;
+    }
 
+    .column_one {
+        margin-right:5%;
+        margin-top: 10%;
     }
 
     .column_two {
@@ -126,14 +150,12 @@ a.read-on {
 
     .icon-menu {
         display: none;
-
     }
 
     .navbar ul {
         display: flex;
         justify-content: center;
         flex-direction: row;
-
     }
 
     .navbar li {
@@ -144,14 +166,22 @@ a.read-on {
     }
 
     main {
-        max-width: 65%;
+        max-width: 70%;
     }
 
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .column_one {
+        margin-right:3%;
+        margin-top: 10%;
+    }
+
     .column_two {
         width: 50%;
+        margin-left:1%;
+        margin-top: 1%;
     }
 
     h2 {
@@ -167,7 +197,6 @@ a.read-on {
         display: flex;
         align-content: center;
         flex-wrap: nowrap;
-
     }
 
     .navbar li {

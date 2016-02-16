@@ -32,20 +32,11 @@
         });
     };
 
-    projectView.clickLink = function() {
-        $('.navbar').on('click', '.tab', function() {
-            $('body').animate({
-                scrollTop: $('#' + $(this).data('content')).offset().top}, 'slow');
-        })
-    };
-
-
-    $(function () {
 
         projectView.addCategoryFilter();
         projectView.insertCategoryFilter();
-        projectView.clickLink();
-    });
+
+
 
     module.projectView = projectView;
 
