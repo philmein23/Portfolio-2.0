@@ -1,114 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="vendor/css/normalize.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/module.css">
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="vendor/css/normalize.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/module.css">
 
 
-    <script id="project-template" type="text/x-handlebars-template">
-        <article class="clearfix" data-category="{{category}}">
-            <header>
-                <div class="project-date">
-                    <address><a class="project_links" href="{{projectURL}}">{{title}}</a></address>
-                    <aside>{{language}}</aside>
-                    <time>{{submitDate}}</time>
-                </div>
-            </header>
-            <section>{{{projectDetails}}}</section>
+  <script id="project-template" type="text/x-handlebars-template">
+    <article class="clearfix" data-category="{{category}}">
+      <header>
+        <div class="project-date">
+          <a class="project_links" href="{{projectURL}}">{{title}}</a>
+          <aside>{{language}}</aside>
+          <time>{{submitDate}}</time>
+        </div>
+      </header>
+      <section>{{{projectDetails}}}</section>
 
-        </article>
-    </script>
+    </article>
+  </script>
 
 </head>
+
 <body>
 
 
-<header class="topheader">
+  <header class="topheader">
 
     <h1>Phillip Nguyen</h1>
     <nav class="navbar">
-        <a class="icon-menu"></a>
-        <ul class="navlinks">
+      <a class="icon-menu"></a>
+      <ul class="navlinks">
 
-            <li class="tab" data-content="projects"><a class="nav_link" href="/">Projects</a></li>
-            <li class="tab" data-content="about-me"><a class ="nav_link" href="/about">About Me</a></li>
+        <li class="tab" data-content="current_project"><a class="nav_link" href="/current">Current Project</a></li>
+        <li class="tab" data-content="projects"><a class="nav_link" href="/">Past Projects</a></li>
+        <li class="tab" data-content="about-me"><a class="nav_link" href="/about">About Me</a></li>
 
-        </ul>
+
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section id="about-me" class="tab-content">
+  <section id="about-me" class="tab-content">
 
     <div class="wrap">
-        <div class="column_one">
-            <img src="img/profilepic.jpg" alt="Phillip Nguyen">
-        </div>
-        <div class="column_two">
-            <article>
-                <h2>Who am I?</h2>
-                <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and
-                    Javascript. My
-                    objective is to become well-versed full stack developer in hopes of creating wonderful web
-                    applications
-                    that can impact people around the world.</p>
-                <p>When I am not striving to learn or code, I am constantly staying active with fitness including
-                    weight
-                    training and being outdoors. I love
-                    to explore my city of Seattle, and spend time with friends and family.</p>
-            </article>
-            <a href="https://github.com/philmein23" class="icon-github"></a>
-            <a href="https://www.linkedin.com/in/phillipdnguyen23" class="icon-linkedin"></a>
-        </div>
+      <div class="column_one">
+        <img src="img/profilepic.jpg" alt="Phillip Nguyen">
+      </div>
+      <div class="column_two">
+        <article>
+          <h1>Who am I?</h1>
+          <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My objective is to become well-versed full stack developer in hopes of creating wonderful web applications that can impact people around the
+            world.</p>
+          <p>When I am not striving to learn or code, I am constantly staying active with fitness including weight training and being outdoors. I love to explore my city of Seattle, and spend time with friends and family.</p>
+        </article>
+        <a href="https://github.com/philmein23" class="icon-github"></a>
+        <a href="https://www.linkedin.com/in/phillipdnguyen23" class="icon-linkedin"></a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="project_section">
+  <section class="project_section">
     <main>
-        <section id="projects" class="tab-content">
-            <h2>Projects</h2>
-            <div class="filters">
-                <select id="category-filter">
-                    <option value="">Filled in by Category</option>
-                </select>
-            </div>
-        </section>
+      <section id="current_project">
+        <h1>Current Project</h1>
+      </section>
+      <section id="projects" class="tab-content">
+        <h1>Past Projects</h1>
+      </section>
     </main>
 
-</section>
+  </section>
 
 
-<footer></footer>
+  <footer></footer>
 
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
-<!-- Added page.js to handle routes-->
-<script src="vendor/js/page.js"></script>
+  <!-- Added page.js to handle routes-->
+  <script src="vendor/js/page.js"></script>
+
+  <script src="js/githubToken.js"></script>
+  <!--Our model to handle data-->
+  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="js/repo.js"></script>
+
+  <!--Our view to handle presentation-->
+  <script type="text/javascript" src="js/repoView.js"></script>
+  <script type="text/javascript" src="js/projectview.js"></script>
 
 
+  <!-- Added controllers-->
+  <script type="text/javascript" src="js/projectController.js"></script>
+  <script type="text/javascript" src="js/aboutController.js"></script>
+  <script type="text/javascript" src="js/currentProjectController.js"></script>
 
-<script type="text/javascript" src="js/portfolio.js"></script>
-<script type="text/javascript" src="js/projectview.js"></script>
-
-
-<!-- Added controllers-->
-<script type="text/javascript" src="js/projectController.js"></script>
-<script type="text/javascript" src="js/aboutController.js"></script>
-
-<!-- calling our routes-->
-<script type="text/javascript" src="js/route.js"></script>
+  <!-- calling our routes-->
+  <script type="text/javascript" src="js/route.js"></script>
 
 
 
 </body>
+
 </html>

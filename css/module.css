@@ -1,210 +1,219 @@
 .template {
-    display: none;
+  display: none;
 }
 
+#current_project > h1 {
+  text-align:center;
+  margin-top: 4%;
+}
+
+#projects > h1 {
+  text-align: center;
+}
 
 .topheader {
 
-    background: url(../img/background.jpg) 0 50%;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
-    color: white;
-    position: relative;
-    opacity: 0.9;
+  background: url(../img/background.jpg) 0 50%;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  color: white;
+  position: relative;
+  opacity: 0.9;
 
 }
 
 .topheader h1 {
-    float: left;
-    padding: 3em 1em 0 0;
+  float: left;
+  padding: 3em 1em 0 0;
 }
 
 
 
 .navbar {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: black;
 
 }
 
 .navbar ul {
-    display: none;
-    list-style: none;
+  display: none;
+  list-style: none;
 }
 
 .navbar:hover ul {
-    display: flex;
+  display: flex;
 
 }
 
 
 a.read-on {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 
 a, a.nav_link:visited {
-    font-size: 1.5em;
-    color: white;
-    font-style: normal;
-    text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  font-weight:bold;
 }
 
 a.project_links:visited {
-    color: black;
+  color: black;
 }
 
 a.icon-github, a.icon-linkedin {
-    color:black
+  color:black
 }
 
 
 footer {
-    height: 50px;
-    background: black;
+  height: 50px;
+  background: black;
 
 }
 
 @media only screen and (min-width: 340px) {
-    .column_two {
-        width: 80%;
-    }
-    .column_one {
-        margin-right:5%;
-        margin-top: 10%;
-    }
+  .column_two {
+    width: 80%;
+  }
+  .column_one {
+    margin-right:5%;
+    margin-top: 10%;
+  }
 
 
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        text-align: center;
-    }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+  }
 
-    .topheader h1 {
-        float: none;
-        position: relative;
-        left: 2em;
-        top: 1em;
-    }
+  .topheader h1 {
+    float: none;
+    position: relative;
+    left: 2em;
+    top: 1em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h2 {
+    font-size: 1.5em;
+  }
 
-    a.projectlink {
-        font-size: 1.5em;
-    }
+  a.projectlink {
+    font-size: 1.5em;
+  }
 
-    section {
-        width: auto;
-    }
+  section {
+    width: auto;
+  }
 
-    .icon-menu {
-        float: right;
-        color: white;
-        padding: 0.5em 0.5em 0.5em;
-    }
+  .icon-menu {
+    float: right;
+    color: white;
+    padding: 0.5em 0.5em 0.5em;
+  }
 
-    .navbar ul {
-        flex-direction: column;
-    }
+  .navbar ul {
+    flex-direction: column;
+  }
 
-    main {
-        max-width: 80%;
-    }
+  main {
+    max-width: 80%;
+  }
 
 }
 
 @media only screen and (min-width: 768px) {
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        text-align: center;
-    }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    text-align: center;
+  }
 
-    .column_one {
-        margin-right:5%;
-        margin-top: 10%;
-    }
+  .column_one {
+    margin-right:5%;
+    margin-top: 10%;
+  }
 
-    .column_two {
-        width: 60%;
-    }
+  .column_two {
+    width: 60%;
+  }
 
-    .topheader h1 {
-        float: none;
-        position: relative;
-        top: 2em;
-    }
+  .topheader h1 {
+    float: none;
+    position: relative;
+    top: 2em;
+  }
 
-    h2 {
-        font-size: 2em;
-    }
+  h2 {
+    font-size: 2em;
+  }
 
-    .icon-menu {
-        display: none;
-    }
+  .icon-menu {
+    display: none;
+  }
 
-    .navbar ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 
-    .navbar li {
+  .navbar li {
 
-        margin-left: 1em;
-        font-weight: bold;
-        float: right;
-    }
+    margin-left: 1em;
+    font-weight: bold;
+    float: right;
+  }
 
-    main {
-        max-width: 70%;
-    }
+  main {
+    max-width: 70%;
+  }
 
 }
 
 @media only screen and (min-width: 1024px) {
 
-    .column_one {
-        margin-right:3%;
-        margin-top: 10%;
-    }
+  .column_one {
+    margin-right:3%;
+    margin-top: 10%;
+  }
 
-    .column_two {
-        width: 50%;
-        margin-left:1%;
-        margin-top: 1%;
-    }
+  .column_two {
+    width: 50%;
+    margin-left:1%;
+    margin-top: 1%;
+  }
 
-    h2 {
-        font-size: 2em;
-    }
+  h2 {
+    font-size: 2em;
+  }
 
-    .icon-menu {
-        display: none;
+  .icon-menu {
+    display: none;
 
-    }
+  }
 
-    .navbar ul {
-        display: flex;
-        align-content: center;
-        flex-wrap: nowrap;
-    }
+  .navbar ul {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
 
-    .navbar li {
-        font-weight: bold;
-    }
+  .navbar li {
+    font-weight: bold;
+  }
 
-    main {
-        max-width: 55%;
-    }
+  main {
+    max-width: 55%;
+  }
 
 }
