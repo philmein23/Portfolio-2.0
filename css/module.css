@@ -2,14 +2,14 @@
   display: none;
 }
 
-#current_project > h1 {
+main > h1 {
   text-align:center;
   margin-top: 4%;
+  font-size: 2em;
 }
-
-#projects > h1 {
-  text-align: center;
-}
+ article > h1 {
+   font-size: 2em;
+ }
 
 .topheader {
 

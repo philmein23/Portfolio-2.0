@@ -1,12 +1,12 @@
 (function(module) {
-    var aboutController = {};
+  var aboutController = {};
 
-    aboutController.index = function() {
-        $('.navbar').on('click', '.tab', function(e) {
+  aboutController.index = function() {
+    $('.navbar').on('click', '.tab', function(e) {
 
-            $('body').animate({
-                scrollTop: $('#' + $(this).data('content')).offset().top}, 'slow');
-        })
-    };
-    module.aboutController = aboutController;
+      $('body').animate({
+        scrollTop: $('#' + $(this).data('content')).offset().top}, 'fast');
+    });
+  };
+  module.aboutController = aboutController;
 })(window);

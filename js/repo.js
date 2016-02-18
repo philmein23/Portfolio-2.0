@@ -4,11 +4,8 @@
 
   repos.requestRepos = function(callback) {
     $.ajax({
-      url: 'https://api.github.com/users/philmein23/repos' + '?per_page=1&sort=updated',
+      url: '/github/users/philmein23/repos' + '?per_page=10&sort=updated',
       type: 'GET',
-      header: {
-        'Authorization': 'token' + githubToken
-      },
       success: function(data, message, xhr) {
         console.log(data);
         repos.all = data;
@@ -18,7 +15,7 @@
 
   repos.with = function(attr) {
     return repos.all.filter(function(repo) {
-      return repo[attr];
+      return repo[attr] === 'Portfolio-2.0';
     });
   };
 
