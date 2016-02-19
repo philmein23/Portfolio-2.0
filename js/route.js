@@ -1,5 +1,5 @@
 //Configure routes for each controller
-page('/', projectController.index);
+page('/', projectController.loadAll, projectController.index);
 page('/about', aboutController.index);
 page('/current', currentProjectController.index);
 

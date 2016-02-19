@@ -1,9 +1,7 @@
 (function(module) {
   var currentProjectController = {};
 
-  currentProjectController.index = function() {
-
-    repos.requestRepos(repoView.index);
+  var clickScroll = function() {
     $('#current_project').empty();
 
     $('.navbar').on('click', '.tab', function(e) {
@@ -11,6 +9,12 @@
         scrollTop: $('#' + $(this).data('content')).offset().top
       }, 'fast');
     });
+  };
+
+  currentProjectController.index = function() {
+    clickScroll();
+    repos.requestRepos(repoView.index);
+
   };
 
   module.currentProjectController = currentProjectController;

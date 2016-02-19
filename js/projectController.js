@@ -1,18 +1,30 @@
 (function(module) {
   var projectController = {};
 
-  projectController.index = function() {
-
-    Project.fetchAll(projectView.initiateIndexPage);
-    $('.project_template').empty();
-
+  var clickScroll = function() {
     $('.navbar').on('click', '.tab', function(e) {
       $('body').animate({
         scrollTop: $('#' + $(this).data('content')).offset().top
       }, 'fast');
     });
-
   };
 
+  projectController.index = function(ctx, next) {
+    projectView.index(ctx.projects);
+  };
+
+  projectController.loadAll = function(ctx, next) {
+    clickScroll();
+    var projectData = function(allProjects) {
+      ctx.projects = Project.all;
+      next();
+    };
+    if (Project.all.length) {
+      ctx.projects = Project.all;
+      next();
+    } else {
+      Project.fetchAll(projectData);
+    }
+  };
   module.projectController = projectController;
 })(window);

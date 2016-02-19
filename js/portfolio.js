@@ -8,15 +8,6 @@
 
   Project.all = [];
 
-  Project.prototype.toHtml = function() {
-    var template = Handlebars.compile($('#project-template').text());
-    this.daysAgo = parseInt((new Date() - new Date(this.submittedOn)) / 60 / 60 / 24 / 1000);
-    this.submitDate = this.submittedOn ? 'submitted ' + this.daysAgo + ' days ago' : '(draft)';
-
-    return template(this);
-  };
-
-
   Project.loadAll = function(rawData) {
     rawData.sort(function(a, b) {
       return (new Date(b.submittedOn)) - (new Date(a.submittedOn));
@@ -27,11 +18,11 @@
     });
   };
 
-  Project.getAll = function() {
+  Project.getAll = function(callback) {
     $.getJSON('data/project.json', function(rawData) {
       localStorage.rawData = JSON.stringify(rawData);
       Project.loadAll(rawData);
-      projectView.initiateIndexPage();
+      callback();
     });
 
   };
@@ -56,7 +47,7 @@
       });
 
     } else {
-      Project.getAll(projectView.initiateIndexPage);
+      Project.getAll(callback);
     }
   };
 
