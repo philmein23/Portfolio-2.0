@@ -2,7 +2,7 @@
   var projectController = {};
 
   var clickScroll = function() {
-    $('.navbar').on('click', '.tab', function(e) {
+    $('nav').on('click', '.tab', function(e) {
       $('body').animate({
         scrollTop: $('#' + $(this).data('content')).offset().top
       }, 'fast');
@@ -14,6 +14,7 @@
   };
 
   projectController.loadAll = function(ctx, next) {
+    $('.project_template').empty();
     clickScroll();
     var projectData = function(allProjects) {
       ctx.projects = Project.all;

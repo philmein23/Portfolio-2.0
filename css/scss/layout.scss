@@ -1,0 +1,29 @@
+$black-color: black;
+$white-color: #FFF;
+$background-color: rgba(255,255,255, 0.7);
+
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.main-section {
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto 20px;
+  background: $background-color;
+  padding: 30px;
+
+
+  .sub-section {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}

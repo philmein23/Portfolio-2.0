@@ -1,25 +1,19 @@
-
-main {
-    margin: 0 auto;
-}
-
-.wrap {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-left:10%;
-}
-
-.topheader h1 {
-    max-width: 50%;
-}
-
 .clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
+  content: '';
+  display: table;
+  clear: both; }
 
+.flexbox {
+  display: flex; }
 
+.main-section {
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px; }
+  .main-section .sub-section {
+    flex-wrap: wrap;
+    width: 90%; }
 
+/*# sourceMappingURL=layout.css.map */

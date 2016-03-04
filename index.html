@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="vendor/css/normalize.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/base.css">
@@ -17,82 +17,71 @@
 
   <script id="project-template" type="text/x-handlebars-template">
     <article class="project_template" data-category="{{category}}">
-      <header>
-        <div class="project-date">
-          <a class="project_links" href="{{projectURL}}">{{title}}</a>
-          <aside>{{language}}</aside>
-          <time>{{submitDate}}</time>
-        </div>
-      </header>
+      <div class="project-date">
+        <a class="project_links" href="{{projectURL}}">{{title}}</a>
+        <aside>{{language}}</aside>
+        <time>{{submitDate}}</time>
+      </div>
+
       <section>{{{projectDetails}}}</section>
 
     </article>
   </script>
-
 </head>
-
 <body>
 
 
-  <header class="topheader">
-
+  <header class="flexbox header">
     <h1>Phillip Nguyen</h1>
-    <nav class="navbar">
+    <nav>
       <a class="icon-menu"></a>
-      <ul class="navlinks">
-
+      <ul class="flexbox">
         <li class="tab" data-content="current_project"><a class="nav_link" href="/current">Current Project</a></li>
         <li class="tab" data-content="projects"><a class="nav_link" href="/">Past Projects</a></li>
         <li class="tab" data-content="about-me"><a class="nav_link" href="/about">About Me</a></li>
-
-
       </ul>
     </nav>
   </header>
-
-  <section id="about-me" class="tab-content">
-
-    <div class="wrap">
-      <div class="column_one">
-        <img src="img/profilepic.jpg" alt="Phillip Nguyen">
-      </div>
-      <div class="column_two">
-        <article>
-          <h1>Who am I?</h1>
-          <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My objective is to become well-versed full stack developer in hopes of creating wonderful web applications that can impact people around the
-            world.</p>
-            <p>When I am not striving to learn or code, I am constantly staying active with fitness including weight training and being outdoors. I love to explore my city of Seattle, and spend time with friends and family.</p>
-          </article>
-          <a href="https://github.com/philmein23" class="icon-github"></a>
-          <a href="https://www.linkedin.com/in/phillipdnguyen23" class="icon-linkedin"></a>
+  <main>
+    <section id="about-me" class="flexbox main-section tab-content">
+      <div class="flexbox sub-section">
+        <div class="flexbox column_one">
+          <img src="img/profilepic.jpg" alt="Phillip Nguyen">
         </div>
-      </div>
-    </section>
+        <div class="flexbox sub-section column_two">
+          <article>
+            <h1>Who am I?</h1>
+            <p>I am an aspiring software developer currently enhancing my skill set with HTML, CSS, and Javascript. My objective is to become well-versed full stack developer in hopes of creating wonderful web applications that can impact people around the
+              world.</p>
+              <p>When I am not striving to learn or code, I am constantly staying active with fitness including weight training and being outdoors. I love to explore my city of Seattle, and spend time with friends and family.</p>
+            </article>
+            <a href="https://github.com/philmein23" class="icon-github"></a>
+            <a href="https://www.linkedin.com/in/phillipdnguyen23" class="icon-linkedin"></a>
+          </div>
+        </div>
+      </section>
 
-    <section class="project_section">
-      <main>
+      <section class="flexbox main-section project_section">
         <h1>Current Project</h1>
-        <section id="current_project">
+        <section id="current_project" class="flexbox sub-section">
         </section>
         <h1>Past Projects</h1>
-        <section id="projects" class="tab-content">
+        <section id="projects" class="flexbox sub-section tab-content">
 
         </section>
-      </main>
-
-    </section>
+      </section>
+    </main>
 
 
     <footer></footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
     <!-- Added page.js to handle routes-->
     <script src="vendor/js/page.js"></script>
 
-    <script src="js/githubToken.js"></script>
     <!--Our model to handle data-->
     <script type="text/javascript" src="js/portfolio.js"></script>
     <script type="text/javascript" src="js/repo.js"></script>
