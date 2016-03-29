@@ -23,4 +23,22 @@
         text-decoration: none;
         font-size: 1.2em; }
 
+.main-section .column_one img {
+  width: 100%;
+  border-radius: 10px; }
+.main-section .column_two a:visited {
+  color: black; }
+.main-section .column_two article span {
+  font-weight: bold; }
+.main-section a:visited, .main-section a:link {
+  font-weight: bold;
+  color: black;
+  text-decoration: none; }
+.main-section .sub-section .project_template aside {
+  font-style: italic; }
+
+@media all and (max-width: 580px) {
+  header nav .icon-menu {
+    display: block; } }
+
 /*# sourceMappingURL=module.css.map */

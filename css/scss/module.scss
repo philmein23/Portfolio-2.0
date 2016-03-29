@@ -38,3 +38,46 @@ $white-color: #FFF;
   }
 
 }
+
+.main-section {
+  .column_one {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .column_two {
+    a:visited {
+      color:$black-color;
+    }
+    article {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  a:visited, a:link {
+    font-weight: bold;
+    color: $black-color;
+    text-decoration: none;
+  }
+  .sub-section {
+    .project_template {
+      aside {
+        font-style: italic;
+      }
+    }
+
+  }
+}
+
+
+@media all and (max-width: 580px) {
+  header {
+    nav {
+      .icon-menu {
+          display: block;
+        }
+    }
+  }
+}

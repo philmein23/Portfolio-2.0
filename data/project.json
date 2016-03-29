@@ -1,15 +1,31 @@
 [
   {
-    "title": "SoundCloud API",
-    "language": "Javascript, jquery, HTML, CSS",
-    "category": "music",
+    "title": "uTravel",
+    "Technologies": "Angular.js, Node.js, Express.js, MongoDB, Javascript, OOP, jquery, HTML, SCSS",
+    "category": "travel",
     "submittedOn": "2015-11-20",
-    "projectURL": "https://github.com/philmein23/Souncloud-API-Hack",
-    "projectDetails": "<p>Designed a simple application that manipulated SoundCloud API to extract particular songs of a genre</p>"
+    "projectURL": "https://github.com/philmein23/travel",
+    "projectDetails": "<p>A web application that will compile user interests and generate a travel itinerary instantly</p>"
+  },
+  {
+    "title": "Prepared For Disaster",
+    "Technologies": "Javascript, OOP, jquery, Page.js, Handlebars.js, Node.js, Express.js, Socket.io, HTML, SCSS",
+    "category": "misc",
+    "submittedOn": "2015-11-20",
+    "projectURL": "https://github.com/philmein23/preparedfordisaster",
+    "projectDetails": "<p>A web application that aides users to create a detailed emergency plan in under 10 minutes</p>"
+  },
+  {
+    "title": "Portfolio",
+    "Technologies": "Javascript, OOP, jquery, HTML, SCSS, Page.js, Handlebars.js",
+    "category": "misc",
+    "submittedOn": "2015-11-20",
+    "projectURL": "https://github.com/philmein23/Portfolio-2.0",
+    "projectDetails": "<p>My portfolio that showcases all the projects I have worked on.</p>"
   },
   {
     "title": "Quiz Application",
-    "language": "Javascript, jquery, HTML, CSS",
+    "Technologies": "Javascript, jquery, HTML, CSS",
     "category": "misc",
     "submittedOn": "2015-10-1",
     "projectURL": "https://github.com/philmein23/quizzapp",
@@ -17,7 +33,7 @@
   },
   {
     "title": "Hot or Cold Game",
-    "language": "Javascript, jquery, HTML, CSS",
+    "Technologies": "Javascript, jquery, HTML, CSS",
     "category": "game",
     "submittedOn": "2015-9-1",
     "projectURL": "https://github.com/philmein23/hot-or-cold-starter",
@@ -25,7 +41,7 @@
   },
   {
     "title": "Karma Landing Page",
-    "language": "HTML, CSS",
+    "Technologies": "HTML, CSS",
     "category": "misc",
     "submittedOn": "2015-8-1",
     "projectURL": "https://github.com/philmein23/startup-landing-page-clone",
