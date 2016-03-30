@@ -51,7 +51,6 @@
     transform: rotate(90deg); }
   .header nav .menu {
     flex-direction: column;
-    width: auto;
     display: none; }
     .header nav .menu li.tab {
       margin-top: 1%;
