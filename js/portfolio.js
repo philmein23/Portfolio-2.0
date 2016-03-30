@@ -18,11 +18,11 @@
     });
   };
 
-  Project.getAll = function(callback) {
+  Project.getAll = function() {
     $.getJSON('data/project.json', function(rawData) {
       localStorage.rawData = JSON.stringify(rawData);
       Project.loadAll(rawData);
-      callback();
+
     });
 
   };

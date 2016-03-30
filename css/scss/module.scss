@@ -17,17 +17,17 @@ $white-color: #FFF;
     background: $black-color;
     width: 100%;
 
-    .icon-menu {
+    button.icon-menu {
       display: none;
     }
 
-    ul {
+    .menu {
       justify-content: center;
 
-      li {
+      li.tab {
         list-style: none;
         color: $white-color;
-        margin-right: 1%;
+        margin-right: 2.5%;
       }
       a {
         color: $white-color;
@@ -72,12 +72,35 @@ $white-color: #FFF;
 }
 
 
-@media all and (max-width: 580px) {
-  header {
+@media all and (max-width: 768px) {
+  .header {
     nav {
-      .icon-menu {
-          display: block;
+      button.icon-menu{
+        display: block;
+        cursor: pointer;
+        display:block;
+        float: right;
+        padding: 2% 2%;
+        background: transparent;
+        border: 0;
+        transition: all 400ms ease;
+      }
+      .transformed {
+        transform: rotate(90deg);
+      }
+
+      .menu {
+        flex-direction: column;
+        width: auto;
+        display: none;
+        li.tab {
+          margin-top: 1%;
+          text-align: center;
+
         }
+      }
+
     }
+
   }
 }
