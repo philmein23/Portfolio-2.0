@@ -10,11 +10,15 @@
   flex-direction: column;
   width: 60%;
   margin: 20px auto 20px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.7);
   padding: 30px;
   border-radius: 20px; }
   .main-section .sub-section {
     flex-wrap: wrap;
     width: 90%; }
+  .main-section .project_template {
+    margin-bottom: 5%; }
 
 /*# sourceMappingURL=layout.css.map */

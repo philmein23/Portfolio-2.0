@@ -29,6 +29,7 @@
     position: absolute;
     top: 0;
     background: #FFF;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
     overflow: hidden;
     justify-content: center; }
@@ -46,7 +47,7 @@
         padding: 10px 10px; }
 
 .main-section .column_one img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px; }
 .main-section .column_two a:visited {
   color: black; }
