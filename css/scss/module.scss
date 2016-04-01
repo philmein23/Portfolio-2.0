@@ -34,16 +34,13 @@ $white-color: #FFF;
         border: 0;
       }
     }
-
-
-
-
   }
 
   .desktop {
     position: absolute;
     top: 0;
     background: $white-color;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100%;
     overflow: hidden;
     justify-content: center;
@@ -70,7 +67,7 @@ $white-color: #FFF;
 .main-section {
   .column_one {
     img {
-      width: 100%;
+      max-width: 100%;
       border-radius: 10px;
     }
   }
