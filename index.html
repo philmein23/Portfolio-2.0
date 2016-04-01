@@ -31,12 +31,16 @@
 
   <header class="flexbox header">
     <h1>Phillip Nguyen</h1>
-    <nav>
+    <nav class="desktop flexbox">
+      <li class="tab" data-content="projects"><a class="nav_link" href="/">Projects</a></li>
+      <li class="tab" data-content="about-me"><a class="nav_link" href="/about">About Me</a></li>
+    </nav>
+    <nav class="mobile">
       <button class="icon-menu"></button>
-      <ul class="flexbox menu">
+      <div class="flexbox menu">
         <li class="tab" data-content="projects"><a class="nav_link" href="/">Projects</a></li>
         <li class="tab" data-content="about-me"><a class="nav_link" href="/about">About Me</a></li>
-      </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -99,9 +103,9 @@
     <script type="text/javascript" src="js/route.js"></script>
 
     <script>
-      $('.icon-menu').on('click', function() {
-        $(this).toggleClass('transformed').siblings('ul').slideToggle();
-      });
+    $('button').on('click', function() {
+      $(this).toggleClass('expanded').siblings('div').slideToggle();
+    });
     </script>
   </body>
 
